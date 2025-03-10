@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { Car, MapPin, Phone, Star, User } from "lucide-react";
+import { useInView } from "react-intersection-observer";
 
 const steps = [
   {
@@ -64,7 +64,7 @@ const PhoneFrame = ({ children }: { children: React.ReactNode }) => (
   </div>
 );
 
-export function AppFlow() {
+export function PhoneFrameAppFlow() {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
